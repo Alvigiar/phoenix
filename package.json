@@ -1,0 +1,21 @@
+{
+ "name": "phoenix",
+ "private": true,
+ "version": "0.0.0",
+ "type": "module",
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+ },
+ "dependencies": {
+  "swiper": "^8.3.2",
+  "vue": "^3.2.37",
+  "vue-slick-carousel": "^1.0.6"
+ },
+ "devDependencies": {
+  "@vitejs/plugin-vue": "^3.0.0",
+  "sass": "^1.54.8",
+  "vite": "^3.0.0"
+ }
+}

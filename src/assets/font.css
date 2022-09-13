@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: local("Roboto Regular"), url("./fonts/Roboto/Roboto-Regular.ttf") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: local("Roboto Bold"), url("./fonts/Roboto/Roboto-Bold.ttf") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Black";
+    src: local("Roboto Black"), url("./fonts/Roboto/Roboto-Black.ttf") format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
