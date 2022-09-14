@@ -1,20 +1,17 @@
 <template>
   <header class="header">
-    <div class="header-title__box title-box">
-      <h1 class="title-box__text">ПРОИЗВОДСТВО ЦВЕТНЫХ МЕТАЛЛОВ И СПЛАВОВ</h1>
+    <div class="header-title__box header-cell">
+      <h1 class="header-cell__text">ПРОИЗВОДСТВО ЦВЕТНЫХ МЕТАЛЛОВ И СПЛАВОВ</h1>
     </div>
-    <div class="wrapper header-logo">
-      <!-- <div class="header-logo__box logo-box">
-        <img class="logo-box__img" src="../img/header-logo.png" alt="err_img" />
-      </div> -->
-      <Logo class="logo"/>
-      <div class="header-logo__btn">
-        <button class="logo-btn__call logo-call">
-          <img class="logo-call__img" src="../img/call.png" alt="err_img" />
+    <nav class="wrapper header-nav">
+      <Logo />
+      <div class="header-nav__btn">
+        <button class="nav-btn__call nav-call">
+          <img class="nav-call__img" src="../img/call.png" alt="err_img" />
         </button>
-        <button class="logo-btn__burger">burger</button>
+        <button class="nav-btn__burger">burger</button>
       </div>
-    </div>
+    </nav>
   </header>
 </template>
 
@@ -24,13 +21,26 @@ import Logo from "./modules/logo.vue";
 export default {
   components: {
     Logo,
-  }
-}
+  },
+};
 </script>
 
 <style scoped lang="scss">
 .header {
-  &-logo {
+  &-cell {
+    background-color: #2b323c;
+    padding: 20px 20px;
+
+    &__text {
+      display: grid;
+      justify-content: center;
+      font-family: Roboto-Bold;
+      font-weight: 700;
+      font-size: 11px;
+      color: #ffffff;
+    }
+  }
+  &-nav {
     margin: 12px 0px;
     display: grid;
     align-items: center;
@@ -44,22 +54,7 @@ export default {
     }
   }
 }
-.title {
-  &-box {
-    background-color: #2b323c;
-    padding: 20px 20px;
-
-    &__text {
-      display: grid;
-      justify-content: center;
-      font-family: Roboto-Bold;
-      font-weight: 700;
-      font-size: 11px;
-      color: #ffffff;
-    }
-  }
-}
-.logo {
+.nav {
   &-box {
     &__cell {
       display: flex;
