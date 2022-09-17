@@ -1,7 +1,11 @@
 <template>
   <div class="btn-arrow">
-    <button class="btn-arrow__left"><img src="../../img/arrow-left.png" alt="err_img"></button>
-    <button class="btn-arrow__right"><img src="../../img/arrow-right.png" alt="err_img"></button>
+    <button class="btn-arrow__left">
+      <img src="../../img/arrow-left-white.png" alt="err_img" />
+    </button>
+    <button class="btn-arrow__right">
+      <img src="../../img/arrow-right-black.png" alt="err_img" />
+    </button>
   </div>
 </template>
 

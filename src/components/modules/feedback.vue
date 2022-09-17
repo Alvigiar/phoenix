@@ -37,7 +37,7 @@
     align-self: center;
     grid-column: 1;
   }
-  &__worl {
+  &__work {
     grid-column: 2;
   }
 }

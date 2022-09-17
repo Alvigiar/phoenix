@@ -1,6 +1,15 @@
 <template>
   <header class="header">
     <div class="header-title__box header-cell">
+      <div class="header__course header-course">
+        <span class="header-course__date">25.04.2022</span>
+        <div class="header-course__box">
+          <span class="header-course__usd">usd</span>
+          <span class="header-course__eur">eur</span>
+          <span class="header-course__lime">eur</span>
+          <span class="header-course__pb">pb</span>
+        </div>
+      </div>
       <h1 class="header-cell__text">ПРОИЗВОДСТВО ЦВЕТНЫХ МЕТАЛЛОВ И СПЛАВОВ</h1>
     </div>
     <nav class="wrapper header-nav">
@@ -27,6 +36,9 @@ export default {
 
 <style scoped lang="scss">
 .header {
+  &-course {
+    display: none;
+  }
   &-cell {
     background-color: #2b323c;
     padding: 20px 20px;
@@ -83,6 +95,20 @@ export default {
       border: 0px solid;
       background-color: #983031;
       color: white;
+    }
+  }
+}
+
+@media screen {
+  .header {
+    &-course {
+      display: flex;
+      color: white;
+    }
+    &-cell {
+      &__text {
+        justify-content: start;
+      }
     }
   }
 }
